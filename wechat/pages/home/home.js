@@ -9,7 +9,9 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     aa:'hahah',
-    count:0
+    count:0,
+    content:'哈哈',
+    showContent: true
   },
   //事件处理函数
   bindViewTap: function() {
@@ -58,5 +60,6 @@ Page({
     this.setData({
       count:this.data.count+1
     })
-  }
+  },
+  onPullDownRefresh:true
 })

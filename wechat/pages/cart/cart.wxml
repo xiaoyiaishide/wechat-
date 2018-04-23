@@ -1,0 +1,20 @@
+<view class="container">
+<block wx:if="{{isShowContent}}">
+  <view wx:if="{{isShowContent}}">{{content}}</view>
+  <checkbox checked="{{false}}"></checkbox>
+  <view>{{num1+num2}}</view>
+  <view>{{num1>0}}</view>
+  <view>{{"num1:"+num1}}</view>
+  <view>{{arr[1]}} + {{obj.a}}</view>
+  <template></template>
+
+  <view wx:for="{{arr1}}" wx:for-index="myIndex" wx:for-item="myItem">{{myIndex}}：{{myItem}}</view>
+  <view wx:for="{{arr2}}" wx:for-index="firstIndex" wx:for-item="firstItem">
+  	<block wx:for="{{firstItem}}" wx:for-index="subIndex" wx:for-item="subItem">
+  		{{firstIndex}}:{{subItem}}
+  	</block>
+  </view>
+</block>
+<template name='myTemplate'>
+</template>
+</view>

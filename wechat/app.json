@@ -3,7 +3,8 @@
     "pages/home/home",
     "pages/my/my",
     "pages/logs/logs",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/cart/cart"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -21,6 +22,11 @@
       "selectedIconPath":"images/home-off.png",
       "pagePath":"pages/home/home",
       "text":"首页"
+    },{
+      "iconPath":"images/cart-off.png",
+      "selectedIconPath":"images/cart-off.png",
+      "pagePath":"pages/cart/cart",
+      "text":"小栗子"
     },{
       "iconPath":"images/my-off.png",
       "selectedIconPath":"images/my-off.png",
