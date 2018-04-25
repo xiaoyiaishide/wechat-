@@ -47,3 +47,5 @@
 	<view style="float:left">浮动框</view>
 	<view style="clear:left;"></view>
 </view>
+
+<view style="font-size: 30px;margin-top: 20px">定位</view>
