@@ -16,5 +16,20 @@
   </view>
 </block>
 <template name='myTemplate'>
+	<view>内容</view>
+	<view>{{content}}</view>
 </template>
+
+<template is="myTemplate" data="{{content:'欧式'}}"/>
+
+<view bindtab="tap1">
+	view1
+	<view bindtab="tap2">
+		view2
+		<view bindtab="tap3">
+			view3
+		</view>
+	</view>
+</view>
+
 </view>

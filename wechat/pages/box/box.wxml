@@ -1,0 +1,49 @@
+<view style="font-size: 20px">
+	块级元素
+</view>
+
+<!-- 每一个块级元素占满一行 -->
+<view style="border:1px solid">
+	第一个块级元素
+</view>
+
+<!-- 默认情况下块级元素的元素框和父级元素的width相同，刚好充满容器 -->
+<view style="border:10px solid;margin:10px;padding:10px;">
+	第二个块级元素
+</view>
+
+<!-- 即使宽度不足，仍会占领一行让其余元素换行 -->
+<view style="border:solid 1px;width:200px;">
+	第三个块级元素
+</view>
+
+<!-- 父级元素高度随内容决定 内容为块级元素 -->
+<view style="margin-top:10px;border:solid 1px;">
+	<view style="height:100px">块级元素</view>
+</view>
+
+<!-- 父级元素高度随内容决定 内容为文本流情况 -->
+<view style="margin-top: 10px;border: 1px solid">
+	文本文本文本文本文本文本文本文本文本文本文本文本文本文本
+</view>
+
+<!--
+	行内元素和其他非块级元素都在一行上，盒模型的高度，宽度，上下的内外边距设置均无效，只能设置左右的内外边距，行内元素中只能放行内元素，放置块级元素会造成混乱
+-->
+<view style="font-size: 20px">
+	浮动
+</view>
+<!--由于元素浮动时不在普通流中，这会导致父级元素忽略浮动元素高度，形成坍塌-->
+<view>
+	文本文本文本文本文本<view style="margin: 20px;border: 1px solid;float: left;">浮动框</view>文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本
+</view>
+<view style="margin-top: 20px;border: 1px solid">
+	<view>其他元素</view>
+	<view style="float:left">浮动框</view>
+</view>
+<!--clear属性可以清除浮动-->
+<view style="margin-top: 20px;border: 1px solid">
+	<view>其他元素</view>
+	<view style="float:left">浮动框</view>
+	<view style="clear:left;"></view>
+</view>

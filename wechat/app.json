@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/box/box",
     "pages/home/home",
     "pages/my/my",
     "pages/logs/logs",
@@ -27,6 +28,11 @@
       "selectedIconPath":"images/cart-off.png",
       "pagePath":"pages/cart/cart",
       "text":"小栗子"
+    },{
+      "iconPath":"images/cart-off.png",
+      "selectedIconPath":"images/cart-off.png",
+      "pagePath":"pages/box/box",
+      "text":"布局"
     },{
       "iconPath":"images/my-off.png",
       "selectedIconPath":"images/my-off.png",
