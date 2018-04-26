@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/my/my",
     "pages/box/box",
     "pages/home/home",
-    "pages/my/my",
     "pages/logs/logs",
     "pages/index/index",
     "pages/cart/cart"
@@ -16,7 +16,7 @@
   "tabBar":{
     "color": "#000000",
     "selectedColor":"#ff7f50",
-    "backgroundColor":"#ffffff",
+    "backgroundColor":"#  ffffff",
     "borderStyle":"black",
     "list": [{
       "iconPath":"images/home-off.png",
@@ -37,7 +37,7 @@
       "iconPath":"images/my-off.png",
       "selectedIconPath":"images/my-off.png",
       "pagePath":"pages/my/my",
-      "text":"我的"
+      "text":"组件"
     }]
   },
   "debug":true

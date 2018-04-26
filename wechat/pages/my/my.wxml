@@ -1,6 +1,42 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="usermotto">
-    <text class="user-motto">我的</text>
-  </view>
+<view style="font-size: 20px">组件</view>
+
+<!--view块级容器，类似div-->
+<view style="display: flex;">
+	<view style="flex-grow:1;background-color: green;height: 80rpx;">1</view>
+	<view style="flex-grow:1;background-color: red;height: 80rpx;">2</view>
+	<view style="flex-grow:1;background-color: blue;height: 80rpx;">3</view>
 </view>
+
+<view style="display: flex;margin-top: 20rpx">
+	<view style="flex-grow:1;background-color: green">1</view>
+	<view style="flex-grow: 1;display: flex;flex-direction: column;">
+		<view style="flex-grow:1;background-color: red;">2</view>
+		<view style="flex-grow:1;background-color: blue;">3</view>
+	</view>
+</view>
+
+<view style="display: flex;flex-direction: column;margin-top: 20rpx">
+	<view style="flex-grow: 1;background-color: blue">1</view>
+	<view style="flex-grow: 1;display: flex;">
+		<view style="flex-grow: 1;background-color: green">2</view>
+		<view style="flex-grow: 1;background-color: red">3</view>
+	</view>
+</view>
+
+<!--scroll-view组件，可滑动的view，可以监听滚动，触顶，触底等事件-->
+<scroll-view></scroll-view>
+
+<!--swiper和swiper-item组件，滑块组件，可以实现轮播图，滑动页面，图片预览等效果-->
+<swiper class='banner' indicator-dots="true" autoplay="ture" current="0" interval="2000" duration="300" bindchange="change">
+	<block wx:for="{{sliderList}}" wx:for-item="myItem">
+		<swiper-item>
+			{{myItem['name']}}
+		</swiper-item>
+	</block>
+</swiper>
+<view>
+	<button bindtap="play">暂停|播放</button>
+</view>
+
+<!--自定义轮播-->
+<view></view>

@@ -1,0 +1,16 @@
+.banner{
+	margin-top: 20px;
+	height: 400px;
+	background-color: #ddd
+}
+.bg-red{
+	background-color: red;
+}
+
+.bg-blue{
+	background-color: blue;
+}
+
+.bg-green{
+	background-color: green;
+}
