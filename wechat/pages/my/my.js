@@ -3,13 +3,18 @@ Page({
 		autoplay:true,
 		sliderList:[
 			{ className:'bg-red', name:'slider1' },
-			{ className:'bg-blue', name:'slider2' },
+			{ class	Name:'bg-blue', name:'slider2' },
 			{ className:'bg-green', name:'slider3' }
 		],
-		content: 'aa'
+		sliderImgList:[
+			{ selected:true, imageSource:'./image/banner1.jpg' },
+			{ selected:false, imageSource:'./image/banner2.jpg' },
+			{ selected:false, imageSource:'./image/banner3.jpg' }
+		],
+		content: 'aa',
+		pickList:['a','b','c']
 	},
 	play:function() {
-		debugger
 		// body...
 		this.setData({
 			autoplay:!this.data.autoplay

@@ -14,3 +14,6 @@
 .bg-green{
 	background-color: green;
 }
+progress{
+	margin-top: 20px
+}

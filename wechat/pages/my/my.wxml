@@ -39,4 +39,34 @@
 </view>
 
 <!--自定义轮播-->
-<view></view>
+<view>
+	<!--轮播图-->
+	<swiper>
+		<block wx:for="{{sliderImgList}}">
+			<swiper-item>
+				{{sliderImgList.source}}
+			</swiper-item>
+		</block>
+	</swiper>
+	<view>
+		<!--自定义面板-->
+		<block wx:for="{{sliderImgList}}" wx:for-inde="myImgIndex" wx:for-item="myImgItem">
+			{{myImgIndex}}+1
+		</block>
+	</view>
+</view>
+
+<icon/>
+<text>类似p标签</text>
+<progress percent="20"></progress>
+<progress percent="30" show-info="true"></progress>
+<progress percent="40" stroke-width="40"></progress>
+<progress percent="50" color="#CD5555"></progress>
+<progress percent="60" active></progress>
+<radio></radio>
+<checkbox></checkbox>
+<switch></switch>
+<label>我是label</label>
+<slider></slider>
+<picker range="{{pickList}}"></picker>
+	
